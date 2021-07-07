@@ -38,11 +38,6 @@ function App() {
     setPic([...picArray, jsonBody])
   }
 
-  const storePics = () => {
-    handleGetPic();
-
-  }
-  //console.log(jsonBody)
   console.log(picArray)
 //console.log(picArray)
 
@@ -63,7 +58,7 @@ function App() {
           {/* <img src={picArray.message} alt="dog"/> */}
         </p>
         <hr />
-        <button onClick={storePics}>Get pic</button>
+        <button onClick={handleGetPic}>Get pic</button>
       </div>
     );
     
